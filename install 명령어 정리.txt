@@ -1,1 +1,5 @@
+npm install --global yarn
+
 yarn add redux react-redux redux-actions immer redux-devtools-extension
+
+yarn add axios redux-saga
