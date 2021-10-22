@@ -1,5 +1,12 @@
+import AuthTemplete from '../components/auth/AuthTemplate'
+import RegisterForm from '../containers/auth/RegisterForm'
+
 const RegisterPage = () => {
-    return <div>회원가입</div>;
+    return (
+        <AuthTemplete>
+            <RegisterForm />
+        </AuthTemplete>
+    );
 };
 
 export default RegisterPage;
