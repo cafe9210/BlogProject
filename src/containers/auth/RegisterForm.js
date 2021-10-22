@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { changeField, initializeForm, register } from "../../modules/auth";
 import AuthForm from "../../components/auth/AuthForm";
 import { check } from '../../modules/user';
+import { withRouter  } from "react-router-dom";
 
 const RegisterForm = () => {
     const dispatch = useDispatch();
@@ -71,4 +72,4 @@ const RegisterForm = () => {
     );
 };
 
-export default RegisterForm;
+export default withRouter(RegisterForm);
