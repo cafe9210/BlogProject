@@ -1,5 +1,12 @@
+import AuthTemplete from '../components/auth/AuthTemplate'
+import LoginForm from '../containers/auth/LoginForm';
+
 const LoginPage = () => {
-    return <div>로그인</div>;
+    return (
+        <AuthTemplete>
+            <LoginForm />
+        </AuthTemplete>
+    );
 };
 
 export default LoginPage;

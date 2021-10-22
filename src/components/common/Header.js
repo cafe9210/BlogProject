@@ -1,51 +1,13 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-class Header extends Component {
-    constructor(props) {
-        super(props);
+const HeaderBlock = styled.div``;
 
-    }
+const Header = () => {
+    return (
+        <HeaderBlock>
 
-    componentWillMount() {
-
-    }
-
-    componentDidMount() {
-
-    }
-
-    componentWillReceiveProps(nextProps) {
-
-    }
-
-    shouldComponentUpdate(nextProps, nextState) {
-
-    }
-
-    componentWillUpdate(nextProps, nextState) {
-
-    }
-
-    componentDidUpdate(prevProps, prevState) {
-
-    }
-
-    componentWillUnmount() {
-
-    }
-
-    render() {
-        return (
-            <div>
-
-            </div>
-        );
-    }
-}
-
-Header.propTypes = {
-
+        </HeaderBlock>
+    );
 };
 
 export default Header;
