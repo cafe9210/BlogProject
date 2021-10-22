@@ -1,8 +1,7 @@
-
-import Quill from 'quill'
+import Quill from 'quill' // 글 작성하는 Editor 라이브러리
 import { useRef, useEffect } from 'react'
 import 'quill/dist/quill.bubble.css'
-import styled from 'styled-componenets' // css in js 관련 리액트 라이브러리 중에서 가장 인기있는 라이브러리
+import styled from 'styled-components' // css in js 관련 리액트 라이브러리 중에서 가장 인기있는 라이브러리
 import palette from '../../lib/styles/palette'
 import Responsive from '../common/Responsive'
 
@@ -29,8 +28,8 @@ const QuillWrapper = styled.div`
 `
 
 const Editor = () => {
-    const quillElement = useRef(null);
-    const quillInstance = useRef(null);
+    const quillElement = useRef(null);  // Quill 을 적용할 DOM(DivElement) 를 설정
+    const quillInstance = useRef(null); // Quill 인스턴스 설정
 
     useEffect(() => {
         quillInstance.current = new Quill(quillElement.current, {
@@ -58,3 +57,5 @@ const Editor = () => {
 }
 
 export default Editor;
+
+
